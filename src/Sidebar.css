@@ -1,0 +1,82 @@
+body {
+	font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+	height: 100%;
+	width: 85px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	transition: 0.5s;
+	overflow-x: hidden;
+	padding-top: 60px;
+	white-space: nowrap;
+  }
+  
+  .sidebar a {
+	padding: 8px 8px 8px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #818181;
+	display: block;
+	transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+	color: #f1f1f1;
+  }
+  
+  #main {
+	padding: 16px;
+	margin-left: 85px;
+	transition: margin-left 0.5s;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidebar {
+	  padding-top: 15px;
+	}
+	.sidebar a {
+	  font-size: 14px;
+	}
+  }
+  
+  /* Additional styles for icons and icon text */
+  
+  .icon-text {
+	vertical-align: middle;
+	padding-left: 35px;
+  }
+  
+  .material-icons,.bi {
+	padding-bottom: 3px;
+	margin-right: 16px;
+  }
+  
+  /* Styles for the expanded sidebar */
+  .sidebar.active {
+	width: 250px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidebar.active {
+	  padding-top: 15px;
+	}
+	.sidebar.active a {
+	  font-size: 18px;
+	}
+  }
+  
+  #main.active {
+	margin-left: 250px;
+  }
+
+  .list-group-item {
+	background-color: transparent;
+	border-top: 1px solid #ddd;
+	border-radius: 0;
+	color: #fff;
+	}
