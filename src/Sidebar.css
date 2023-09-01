@@ -4,9 +4,6 @@ body {
   
   .sidebar {
 	height: 100%;
-	width: 85px;
-	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #111;
@@ -14,17 +11,18 @@ body {
 	overflow-x: hidden;
 	padding-top: 60px;
 	white-space: nowrap;
+	z-index: 1;
   }
-  
+
   .sidebar a {
 	padding: 8px 8px 8px 16px;
 	text-decoration: none;
 	font-size: 18px;
 	color: #818181;
-	display: block;
+	display: flex;
 	transition: color 0.3s;
   }
-  
+ 
   .sidebar a:hover {
 	color: #f1f1f1;
   }
@@ -43,17 +41,17 @@ body {
 	  font-size: 14px;
 	}
   }
-  
+
   /* Additional styles for icons and icon text */
-  
+
   .icon-text {
-	vertical-align: middle;
-	padding-left: 35px;
+	vertical-align: left;
+	padding-left: 1lvw;
   }
   
   .material-icons,.bi {
 	padding-bottom: 3px;
-	margin-right: 16px;
+	margin-right: 2.5em;
   }
   
   /* Styles for the expanded sidebar */
@@ -62,11 +60,16 @@ body {
   }
   
   @media screen and (max-height: 450px) {
+	.sidebar{
+		min-width: 5lvh;
+	
+	}
 	.sidebar.active {
 	  padding-top: 15px;
+	  width: auto;
 	}
 	.sidebar.active a {
-	  font-size: 18px;
+	  font-size: 18%;
 	}
   }
   

@@ -5,33 +5,39 @@ const Sidebar = () => {
 
   const expandSidebar = () => {
     setMini(false);
+    document.getElementById('body').className='';
+    document.getElementById('body').classList.add('col-10');
   };
 
   const retractSidebar = () => {
     setMini(true);
+    document.getElementById('body').className='';
+    document.getElementById('body').classList.add('col-7');
   };
 
   const sidebarStyle = {
-    width: mini ? '85px' : '250px',
+    width: mini ? '7vh':"20vh",
     backgroundColor: '#111', // Background color
     transition: '0.5s',
     overflowX: 'hidden',
     paddingTop: '60px',
     whiteSpace: 'nowrap',
     color: '#818181', // Default text color
-    [`d-none d-md-block`]: !mini,
-    [`d-md-none`]: mini,
+    [`d-flex d-md-flex`]: !mini,
+    [`d-md-flex`]: mini,
   };
 
   const linkStyle = {
-    padding: '8px 8px 12px 3px',
+    padding: '5vh 8% 1vh 1vh',
     textDecoration: 'none',
-    fontSize: '22px',
+    fontSize: 'auto',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'start',
     color: 'inherit',
     transition: 'color 0.3s',
+    [`d-flex d-sm-flex`]: !mini,
+    [`d-xl-flex`]: mini,
   };
 
   const activeLinkStyle = {
@@ -55,7 +61,7 @@ const Sidebar = () => {
         </li>
         <li className="list-group-item border-0">
           <a href="#" style={linkStyle}>
-            <i class="bi bi-truck" width="20" height="20px"> </i>
+            <i class="bi bi-truck" width="20" height="20"> </i>
             <span className="icon-text">Loads</span>
           </a>
         </li>

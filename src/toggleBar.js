@@ -1,4 +1,4 @@
-var mini = true;
+/*var mini = true;
 
 function toggleSidebar() {
   if (mini) {
@@ -13,3 +13,4 @@ function toggleSidebar() {
     this.mini = true;
   }
 }
+*/

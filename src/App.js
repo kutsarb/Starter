@@ -6,18 +6,19 @@ import './App.css';
 
 function App() {
   return (
-    <Container fluid>
-      <Row>
-        <Col xs={12} md={3}> {/* Use xs={12} for full width on mobile */}
-          <Sidebar />
-        </Col>
-        <Col xs={10} md={8}>
+    <div class="container" style={{marginLeft: 'none'}}>
+      <div class="row justify-items-center">
+            <Sidebar class="col">
+
+            </Sidebar>
+
+        <div id="body" class="col">
           <h1>Welcome to My React Bootstrap Site</h1>
           <p>This is a simple example of using React with Bootstrap.</p>
           <Button variant="primary">Click Me</Button>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 
