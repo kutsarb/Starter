@@ -31,9 +31,27 @@ const Nav2 = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                 
                 <Nav.Link href='/'>Home</Nav.Link>
-                <Nav.Link href="/Loads">Loads</Nav.Link>
+
+                
+                <NavDropdown
+                    title="Loads"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    
+                  >
+                <NavDropdown.Item  href="/openLoads">Open</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item  href="/dispatchedLoads">Dispatched</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item  href="/deliveredLoads">Delivered</NavDropdown.Item>
+                
+                </NavDropdown>
+
+
                 <Nav.Link href="#2">Services</Nav.Link>
+
                 <Nav.Link href="#3">Contact</Nav.Link>
+
+
                 </Nav>
                 <Form className="d-flex">
                   <Form.Control
