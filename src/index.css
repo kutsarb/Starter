@@ -12,25 +12,19 @@ code {
     monospace;
 }
 
-.nItem{
-  font-size: 30px;
-  text-align: center;
+.nav-link{
+  padding-left: 3%;
 }
 
-.navB{
- text-align: center;
-}
-
-.dropdown-menu{
-  border: 5px;
-  border-color: rgb(255, 255, 255);
-  background-color: rgb(56, 56, 56);
+.dropdown-item{
+  padding-left: 8%;
   
 }
 
-/*.nav-link{
-  text-align: auto;
-  letter-spacing: 4px;
-  font-size: larger;
+.Red{
+  color: rgb(255, 0, 0);
 }
-*/
+
+.navbar-light{
+  border-width: 5px;
+}
