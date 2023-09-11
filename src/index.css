@@ -12,3 +12,11 @@ code {
     monospace;
 }
 
+.nItem{
+  font-size: 30px;
+  text-align: center;
+}
+
+.navB{
+ text-align: center;
+}
