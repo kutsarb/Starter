@@ -12,19 +12,3 @@ code {
     monospace;
 }
 
-.nav-link{
-  padding-left: 3%;
-}
-
-.dropdown-item{
-  padding-left: 8%;
-  
-}
-
-.Red{
-  color: rgb(255, 0, 0);
-}
-
-.navbar-light{
-  border-width: 5px;
-}
